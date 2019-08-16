@@ -3,6 +3,9 @@ const express = require ( 'express' )
 // create express app
 const app = express ()
 
+// Select port for Heroku Deployment 
+const PORT = process.env.PORT || 5000
+
 // Route handler
 app.get ( '/', ( req, res ) => {
     res.send ( {
@@ -11,6 +14,6 @@ app.get ( '/', ( req, res ) => {
 } )
 
 // listen for express app
-app.listen ( 5000, () => {
-    console.log ( 'Server is listening on port 5000' )
+app.listen ( PORT, () => {
+    console.log ( `Server is listening on port ${PORT}` )
 } )
