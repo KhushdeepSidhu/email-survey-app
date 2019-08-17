@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "start": "env-cmd ./config/prod.env node index.js",
     "dev": "env-cmd ./config/dev.env node index.js"
   },
   "engines": {

@@ -22,7 +22,7 @@ passport.use ( new GoogleStrategy ( {
     console.log ( accessToken )
 } ) )
 
-// Route to handle google authentication
+// Route to handle google authentication using passport
 // behind the scenes google string is identifier for the new google strategy that is being created and passed to the 
 // passport in the above request 
 app.get ( '/auth/google', passport.authenticate ( 'google', {
