@@ -1,4 +1,5 @@
 const express = require ( 'express' )
+require ( './db/mongoose' )
 const authRoutes = require ( './routers/authRoutes' )
 require ( './services/passport' )
 
